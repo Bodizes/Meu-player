@@ -4,42 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Player</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main>
+    <div class="container">
 
-        <h1>🎵 Meu Player</h1>
+        <div class="logo">
+            🎵
+        </div>
 
-        <section id="auth">
-            <input id="email" type="email" placeholder="Seu e-mail">
-            <input id="password" type="password" placeholder="Sua senha">
+        <h1>Meu Player</h1>
+        <p class="subtitle">Sua música, do seu jeito.</p>
 
-            <button id="login">Entrar</button>
-            <button id="signup">Criar conta</button>
-        </section>
+        <div id="message"></div>
 
-        <section id="library" hidden>
+        <div id="auth">
 
-            <h2>Minhas músicas</h2>
+            <input
+                id="email"
+                type="email"
+                placeholder="Seu e-mail"
+                autocomplete="email"
+            >
 
-            <input id="musicFile" type="file" accept="audio/*">
+            <input
+                id="password"
+                type="password"
+                placeholder="Sua senha"
+                autocomplete="current-password"
+            >
 
-            <button id="upload">
+            <button id="loginButton">
+                Entrar
+            </button>
+
+            <button id="signupButton" class="secondary">
+                Criar conta
+            </button>
+
+        </div>
+
+        <div id="library" hidden>
+
+            <h2>Minha biblioteca 🎧</h2>
+
+            <p id="userEmail"></p>
+
+            <input
+                id="musicFile"
+                type="file"
+                accept="audio/*"
+            >
+
+            <button id="uploadButton">
                 ＋ Adicionar música
             </button>
 
             <div id="songs"></div>
 
-            <button id="logout">
+            <button id="logoutButton" class="logout">
                 Sair
             </button>
 
-        </section>
+        </div>
 
-    </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
