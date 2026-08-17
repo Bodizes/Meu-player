@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://hcloisajtyjblnaghbtrxu.supabase.co";
 
 // COLE AQUI SUA sb_publishable_...
-const SUPABASE_KEY = "COLE_SUA_PUBLISHABLE_KEY_AQUI";
+const SUPABASE_KEY = "sb_publishable_gF2jSbs8ZItU2220ckcMfQ_R_622V6r";
 
 const { createClient } = supabase;
 
